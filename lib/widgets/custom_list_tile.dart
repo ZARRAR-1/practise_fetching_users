@@ -38,10 +38,11 @@ class CustomListTile extends StatelessWidget {
               radius: 30,
               backgroundColor: Colors.teal,
             ),
-            title: Text(
-              userName,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
+            title: Text(userName,
+                style:
+                    const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis),
             subtitle: Row(
               children: [
                 // Correctly placed opening bracket
@@ -62,6 +63,7 @@ class CustomListTile extends StatelessWidget {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
+                      duration: Duration(milliseconds: 100),
                       content: Text('User Deleted Successfully!'),
                       backgroundColor: Colors.green,
                       // behavior: SnackBarBehavior.floating,

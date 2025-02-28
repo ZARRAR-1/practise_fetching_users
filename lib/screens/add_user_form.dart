@@ -65,6 +65,7 @@ class CreateNewUserState extends State<CreateNewUser> {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
+            duration: Duration(milliseconds: 100),
             content: Text('User Added Successfully!'),
             backgroundColor: Colors.green,
             // behavior: SnackBarBehavior.floating,

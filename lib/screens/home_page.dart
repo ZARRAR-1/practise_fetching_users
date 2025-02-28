@@ -44,7 +44,10 @@ class _HomePageState extends State<HomePage> {
           builder:
               (BuildContext context, UserProvider userProvider, Widget? child) {
             if (userProvider.isLoading) {
-              return const Center(child: CircularProgressIndicator());
+              return const Center(
+                  child: CircularProgressIndicator(
+                color: Colors.grey,
+              ));
             }
 
             if (userProvider.error != null) {
@@ -87,12 +90,13 @@ class _HomePageState extends State<HomePage> {
             }
 
             return RefreshIndicator(
+              color: Colors.grey,
               onRefresh: () async {
-                print('Refreshing...'); // Debugging
                 Provider.of<UserProvider>(context, listen: false).fetchUsers();
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
+                      duration: Duration(milliseconds: 100),
                       content: Text('Refreshed Successfully!'),
                       backgroundColor: Colors.green,
                       // behavior: SnackBarBehavior.floating,
