@@ -45,12 +45,14 @@ class _HomePageState extends State<HomePage> {
               (BuildContext context, UserProvider userProvider, Widget? child) {
             if (userProvider.isLoading) {
               return const Center(
-                  child: CircularProgressIndicator(
-                color: Colors.grey,
-              ));
+                child: CircularProgressIndicator(
+                  color: Colors.grey,
+                ),
+              );
             }
 
             if (userProvider.error != null) {
+              //Means there is some error text stored
               return Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

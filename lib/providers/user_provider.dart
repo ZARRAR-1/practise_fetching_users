@@ -55,6 +55,7 @@ class UserProvider extends ChangeNotifier {
   }
 
   void deleteUser(int userId) {
+    //Simply removing the user from the local list:
     _users.removeWhere((user) => user.id == userId);
     notifyListeners();
   }
