@@ -94,7 +94,9 @@ class _HomePageState extends State<HomePage> {
             return RefreshIndicator(
               color: Colors.grey,
               onRefresh: () async {
-                Provider.of<UserProvider>(context, listen: false).fetchUsers();
+                await Provider.of<UserProvider>(context, listen: false)
+                    .fetchUsers();
+
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
