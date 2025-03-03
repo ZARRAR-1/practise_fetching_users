@@ -35,3 +35,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//TODO:
+//1) Implement Custom Search Bar in home page which doesn't scroll
+//2) Add Navigation to a details page of a user, showing all his details.
