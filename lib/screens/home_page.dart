@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      duration: Duration(milliseconds: 100),
+                      duration: Duration(milliseconds: 200),
                       content: Text('Refreshed Successfully!'),
                       backgroundColor: Colors.green,
                       // behavior: SnackBarBehavior.floating,
