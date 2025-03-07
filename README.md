@@ -4,13 +4,13 @@ A new Flutter project, featuring parsing json fetched from a public API: https:/
 
 ## Features
 
-1) Fetches user data & parses it effectively to show is a listview.builder (dynamically & lalzily)
+1) Fetches user data & parses it effectively to show in a dynamic scrollable list (using listview.builder).
 2) Provider is used for state management.
 3) Carefully curated UX as system constantly informs user its state after any action.
 4) Pull to refresh/refetch functionality.
 5) Deletes any user locally.
 6) Has a seperate screen, providing a form to add a new user. The added user is shown back in the list.
-7) Simple navigation to & from homepage to create user page.
+7) Simple navigation to & from homepage to the create new user page.
 8) Implements singleton pattern to interact with fetching API.
 9) The application is well tested against edge cases like: network failure, no server response and empty data fetched. 
 
