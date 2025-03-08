@@ -90,7 +90,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               );
             }
-
             return RefreshIndicator(
               color: Colors.grey,
               onRefresh: () async {

@@ -14,6 +14,11 @@ A new Flutter project, featuring parsing json fetched from a public API: https:/
 8) Implements singleton pattern to interact with fetching API.
 9) The application is well tested against edge cases like: network failure, no server response and empty data fetched. 
 
+## What fuctionalities can further be added to the project
+1) Details of a specific user can be viewed by tapping on it in the list.
+2) An unscrollable persistent search bar can be added to the homescreen filtering the users in the list.
+
+
 ## Video Recording
  
 https://github.com/user-attachments/assets/7841260d-25f7-40f9-88bc-d8db43293588
